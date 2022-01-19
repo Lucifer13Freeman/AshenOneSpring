@@ -73,9 +73,9 @@ public class PostController
             @PageableDefault(
                     sort = { "id" },
                     direction = Sort.Direction.DESC
-            ) Pageable pageable,
-            RedirectAttributes redirectAttributes,
-            @RequestHeader(required = false) String referer
+            ) Pageable pageable
+//            RedirectAttributes redirectAttributes,
+//            @RequestHeader(required = false) String referer
     ) throws IOException
     {
         post.setAuthor(user);
